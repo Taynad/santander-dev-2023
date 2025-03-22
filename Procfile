@@ -1,1 +1,1 @@
-web: java -jar C:\intellijProjects\santander-dev-2023\santander-dev-2023\target\santander-dev-2023-0.0.1-SNAPSHOT.jar
+web: java -jar target/santander-dev-2023-0.0.1-SNAPSHOT.jar
