@@ -1,5 +1,6 @@
 package me.dio.santander_dev_2023.domain.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -9,10 +10,13 @@ import jakarta.persistence.MappedSuperclass;
 public abstract class BaseItem {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Schema(description = "ID do item", example = "1")
     private Long id;
 
+    @Schema(description = "Ícone do item", example = "icon.png")
     private String icon;
 
+    @Schema(description = "Descrição do item", example = "Descrição exemplo")
     private String description;
 
     //getter  e setter

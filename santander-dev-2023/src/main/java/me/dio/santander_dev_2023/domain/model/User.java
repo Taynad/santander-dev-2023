@@ -26,6 +26,22 @@ public class User {
 
     //getter e setter
 
+    public List<Feature> getFeatures() {
+        return features;
+    }
+
+    public void setFeatures(List<Feature> features) {
+        this.features = features;
+    }
+
+    public List<News> getNews() {
+        return news;
+    }
+
+    public void setNews(List<News> news) {
+        this.news = news;
+    }
+
     public Account getAccount() {
         return account;
     }
