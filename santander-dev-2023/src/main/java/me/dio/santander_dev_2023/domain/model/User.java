@@ -2,6 +2,8 @@ package me.dio.santander_dev_2023.domain.model;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity(name = "tb_user")
 public class User {
     @Id
@@ -15,6 +17,12 @@ public class User {
 
     @OneToOne(cascade = CascadeType.ALL)
     private Card card;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<Feature> features;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<News> news;
 
     //getter e setter
 
